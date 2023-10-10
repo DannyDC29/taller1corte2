@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DanielaDC">
+    <title>Ejercicio 4</title>
+    <script src="../js/utilidadest4.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora de Hipoteca</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="montoPrest">Monto del Préstamo:</label>
+                </td>
+                <td><input type="number" id="montoPrest" required></td>
+            </tr>
+            <tr>
+                <td><label for="interesAnual">Tasa de Interés Anual (%):</label>
+                </td>
+                <td><input type="number" id="interesAnual" required></td>
+            </tr>
+            <tr>
+                <td><label for="plazoPrestamo">Período de Amortización en Años:</label>
+                </td>
+                <td><input type="number" id="plazoPrestamo" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button type="button" onclick="cuotaMensual()">Calcular Cuota Mensual</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    <br><br> 
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+</body>
+
+</html>

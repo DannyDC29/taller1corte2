@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DanielaDC">
+    <title>Ejercicio 7</title>
+    <script src="../js/utilidadest7.js"></script>
+</head>
+
+<body>
+    <h1>Generador de Contratos Legales</h1>
+    <table>
+        <tr>
+            <td><label for="nombreCliente">Nombre del Cliente:</label></td>
+            <td><input type="text" id="nombreCliente" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="fechaInicio">Fecha de Inicio:</label></td>
+            <td><input type="date" id="fechaInicio" required></td>
+        </tr>
+
+        <tr>
+            <td> <label for="fechaInicio">Fecha de finalización:</label>
+            </td>
+            <td><input type="date" id="fechaFin" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="terminosCondiciones">Términos y Condiciones:</label></td>
+            <td><textarea id="terminosCondiciones" rows="5" cols="50" required></textarea></td>
+        </tr>
+    </table>
+    <form>
+        <button type="button" onclick="generarContrato()">Generar Contrato</button>
+    </form>
+    <h2>Contrato Legal:</h2>
+    <fieldset>
+        <pre id="textoContrato"></pre>
+    </fieldset>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DanielaDC">
+    <title>Ejercicio 2</title>
+    <script src="../js/utilidadest2.js"></script>
+</head>
+
+<body>
+
+    <h1>Generador de Tarjetas de Presentación</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" required></td>
+            </tr>
+            <tr>
+                <td><label for="cargo">Cargo:</label></td>
+                <td><input type="text" id="cargo" required></td>
+            </tr>
+            <tr>
+                <td><label for="compannia">Empresa:</label></td>
+                <td><input type="text" id="compannia" required></td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo:</label></td>
+                <td><input type="email" id="correo" required placeholder="example@domain.com"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="button" onclick="generarKard()">Generar Tarjeta</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+
+    <fieldset style="text-align: center;">
+        <h2>Tarjeta de Presentación:</h2>
+        <div id="tarjetaPresent"></div>
+    </fieldset>
+
+
+</body>
+
+</html>

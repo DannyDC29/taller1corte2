@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DanielaDC">
+    <title>Ejercicio 1</title>
+    <script src="../js/utilidadest1.js"></script>
+    <meta name="author"content="DanielaDC">
+
+</head>
+
+<body>
+    <h1>Caro's Store</h1>
+    <h2></h2>
+    <table>
+        <tr>
+            <th colspan="2" style="font-size: 140%;">Gestor de inventario</th>
+        </tr>
+
+        <tr>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Agregar Nuevo Producto</legend>
+                        <table>
+                            <tr>
+                                <td><label for="nombreProducto">Nombre de producto</label></td>
+                                <td><input type="text" id="nombreProducto" required></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="precioProducto">Precio</label></td>
+                                <td><input type="number" id="precioProducto" required></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="productoDispo">Cantidad disponible</label></td>
+                                <td><input type="number" id="productoDispo" required></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <button type="button" onclick="agregarProducto()">Agregar producto
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Realizar Nueva Venta</legend>
+                        <table>
+                            <tr>
+                                <td><label for="venderProdct">Producto vendido</label></td>
+                                <td><input type="text" id="venderProdct" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="quantitySold">Cantidad vendida</label></td>
+                                <td><input type="number" id="quantitySold" required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <br><button type="button" onclick="realizarVenta()">Realizar venta
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <h2>Resultado</h2>
+    <div id="resultadoxd"></div>
+</body>
+
+</html>
